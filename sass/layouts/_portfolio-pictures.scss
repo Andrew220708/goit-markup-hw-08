@@ -31,11 +31,11 @@
     transform: translateY(0);
   }
 }
-.picture {
-  gap: 30px;
-}
 .pictures {
-  flex-basis: calc(100% / 3 - 30px);
+  width: 100%;
+  @include mobile {
+  }
+  // flex-basis: calc(100% / 3 - 30px);
 }
 .portfolio-work {
   padding-top: 20px;

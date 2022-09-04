@@ -1,7 +1,6 @@
 .hero {
   width: 100%;
   padding: 200px 0;
-  max-width: 1600px;
   margin: 0 auto;
   text-align: center;
   background-repeat: no-repeat;
@@ -11,7 +10,7 @@
       rgba(47, 48, 58, 0.4),
       rgba(47, 48, 58, 0.4)
     ),
-    url(../img/Img\ hero.jpg);
+    url(../img/Img\.hero);
 }
 
 .home__btn {
@@ -27,16 +26,23 @@
 .home__title {
   margin: 0 auto;
   font-weight: 900;
-  // font-size: 44px;
-  font-size: 26px;
-  // line-height: 1.36;
   line-height: 1.62;
+  font-size: 26px;
   text-align: center;
   letter-spacing: 0.06em;
   text-transform: uppercase;
   color: #ffffff;
   margin-bottom: 30px;
-  max-width: 696px;
+  // max-width: 696px;
+  max-width: 300px;
+  @include mobile {
+    max-width: 360px;
+  }
+  @include desktop {
+    max-width: 696px;
+    font-size: 44px;
+    line-height: 1.36;
+  }
 }
 .hero,
 footer {
