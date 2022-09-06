@@ -1,6 +1,9 @@
 .footer .container {
   display: flex;
   align-items: baseline;
+  flex-wrap: wrap;
+  text-align: center;
+  justify-content: center;
 }
 
 .footer {

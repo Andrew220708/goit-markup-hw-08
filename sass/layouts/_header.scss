@@ -12,11 +12,17 @@
 
 .navigation {
   display: none;
+  @include tablet {
+    display: block;
+  }
 }
 .menu__open__btn {
   margin-left: auto;
   background-color: #ffffff;
   border: none;
+  @include tablet {
+    display: none;
+  }
 }
 .contact__icon:hover,
 .contact__icon:focus {
@@ -38,10 +44,18 @@
   letter-spacing: 0.02em;
   color: #757575;
 }
+
 .contact {
   display: flex;
   margin-left: auto;
   display: none;
+  @include tablet {
+    display: block;
+  }
+  @include desktop {
+    display: flex;
+    margin-left: auto;
+  }
 }
 
 .contact__link:hover,
@@ -132,9 +146,13 @@
     flex-direction: column;
     justify-content: space-between;
   }
+  @include tablet {
+    display: none;
+  }
 }
 .menu__close__btn {
   margin-left: auto;
+  padding-right: 10px;
   display: block;
   border: none;
   background-color: #ffffff;

@@ -125,11 +125,21 @@ body {
 .navigation {
   display: none;
 }
+@media screen and (min-width: 768px) {
+  .navigation {
+    display: block;
+  }
+}
 
 .menu__open__btn {
   margin-left: auto;
   background-color: #ffffff;
   border: none;
+}
+@media screen and (min-width: 768px) {
+  .menu__open__btn {
+    display: none;
+  }
 }
 
 .contact__icon:hover,
@@ -162,6 +172,19 @@ body {
   display: flex;
   margin-left: auto;
   display: none;
+}
+@media screen and (min-width: 768px) {
+  .contact {
+    display: block;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .contact {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    margin-left: auto;
+  }
 }
 
 .contact__link:hover,
@@ -260,9 +283,15 @@ body {
       -ms-flex-pack: justify;
           justify-content: space-between;
 }
+@media screen and (min-width: 768px) {
+  .mob__menu {
+    display: none;
+  }
+}
 
 .menu__close__btn {
   margin-left: auto;
+  padding-right: 10px;
   display: block;
   border: none;
   background-color: #ffffff;
@@ -400,7 +429,6 @@ footer {
 button {
   display: inline-block;
   font-family: inherit;
-  padding: 10px 32px;
 }
 
 .features__benefits {
@@ -613,6 +641,12 @@ button {
   -webkit-box-align: baseline;
       -ms-flex-align: baseline;
           align-items: baseline;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  text-align: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 .footer {
