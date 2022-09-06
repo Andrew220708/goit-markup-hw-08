@@ -4,6 +4,7 @@
   flex-wrap: wrap;
   text-align: center;
   justify-content: center;
+  fl
 }
 
 .footer {
@@ -67,6 +68,9 @@
     letter-spacing: 0.03em;
     color: rgba(255, 255, 255, 0.6);
     display: inline-block;
+    @include mobile {
+      margin: 0;
+    }
   }
   &-list {
     display: flex;
