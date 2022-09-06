@@ -28,10 +28,16 @@
 .contact__icon:focus {
   fill: #2196f3;
 }
-
-.contact__icon {
+.list .contact__icon {
   margin-right: 10px;
   transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.contact__list {
+  list-style: none;
+  display: none;
+  @include tablet {
+    display: block;
+  }
 }
 .contact__item-tel {
   margin-left: 50px;
@@ -44,17 +50,12 @@
   letter-spacing: 0.02em;
   color: #757575;
 }
-
 .contact {
   display: flex;
   margin-left: auto;
   display: none;
   @include tablet {
     display: block;
-  }
-  @include desktop {
-    display: flex;
-    margin-left: auto;
   }
 }
 

@@ -1,10 +1,10 @@
 .footer .container {
+  gap: 60px;
   display: flex;
   align-items: baseline;
   flex-wrap: wrap;
   text-align: center;
   justify-content: center;
-  fl
 }
 
 .footer {
@@ -58,7 +58,7 @@
 }
 
 .join-footer {
-  margin-left: 70px;
+  // margin-left: 70px;
   &-item {
     font-family: "Roboto";
     font-style: normal;
@@ -68,9 +68,6 @@
     letter-spacing: 0.03em;
     color: rgba(255, 255, 255, 0.6);
     display: inline-block;
-    @include mobile {
-      margin: 0;
-    }
   }
   &-list {
     display: flex;
@@ -102,4 +99,63 @@
     margin-bottom: 20px;
     color: #ffffff;
   }
+}
+.subscrip-form {
+  // margin-left: 93px;
+}
+
+.subscrip-title {
+  display: inline-block;
+  margin-bottom: 20px;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: #ffffff;
+  cursor: pointer;
+}
+.subscrip-input {
+  padding: 15px 16px;
+  height: 50px;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+  border-radius: 4px;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.25;
+  background-color: transparent;
+  margin-bottom: 20px;
+  @include desktop {
+    width: 358px;
+  }
+}
+.subscrip-wrap {
+  @include desktop {
+    display: flex;
+  }
+}
+.subscrip-btn-button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #2196f3;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
+  min-width: 200px;
+  height: 50px;
+  margin-left: 12px;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.88;
+  letter-spacing: 0.06em;
+  color: #ffffff;
+  border: none;
+  cursor: pointer;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+.subscrip-btn-icon {
+  fill: #ffffff;
+  padding-left: 10px;
 }
