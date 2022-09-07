@@ -1079,7 +1079,7 @@ margin-right: 8px;
   pointer-events: none;
 }
 
-.portfolio-btn {
+.portfol-btn {
   font-weight: 500;
   font-size: 16px;
   line-height: 1.62;
@@ -1100,12 +1100,14 @@ margin-right: 8px;
   -webkit-transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
           transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
-.portfolio-btn:hover, .portfolio-btn:focus {
+
+.portfol-btn:hover,
+.portfol-btn:focus {
   color: #ffffff;
   background-color: #2196f3;
 }
 
-.portfolio-item-btn:not(:last-child) {
+.portfol-item-btn:not(:last-child) {
   margin-right: 8px;
 }
 
