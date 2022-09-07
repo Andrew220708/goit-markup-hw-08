@@ -1145,10 +1145,8 @@ margin-right: 8px;
   letter-spacing: 0.03em;
   color: #212121;
   border: none;
-  -webkit-box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-          box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  background: #f5f4fa;
   border-radius: 4px;
-  background-color: transparent;
   -webkit-transition-property: color, background-color, -webkit-box-shadow;
   transition-property: color, background-color, -webkit-box-shadow;
   transition-property: color, background-color, box-shadow;
@@ -1157,12 +1155,16 @@ margin-right: 8px;
           transition-duration: 250ms;
   -webkit-transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
           transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  -webkit-box-shadow: rgb(245, 244, 250);
+          box-shadow: rgb(245, 244, 250);
 }
 
 .portfol-btn:hover,
 .portfol-btn:focus {
   color: #ffffff;
   background-color: #2196f3;
+  -webkit-box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+          box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
 
 .portfol-item-btn:not(:last-child) {
