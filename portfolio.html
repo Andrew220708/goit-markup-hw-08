@@ -23,52 +23,139 @@
     <link rel="stylesheet" href="./css/main.min.css" />
   </head>
   <body>
-    
-    <!-- <header class="header">
-      <div class="container">
-        <a href="" lang="en" class="header-logo link">
+    <header class="header">
+      <div class="container header__container">
+        <a href="" lang="en" class="logo header__logo link">
           <span class="logo-web">Web</span
           ><span class="logo-studio">Studio</span>
         </a>
-        <nav class="header-nav">
-          <ul class="header-list list">
-            <li class="header-item">
-              <a href="" class="header-link link">Студия</a>
+        <nav class="navigation">
+          <ul class="navigation__list list">
+            <li class="navigation__item">
+              <a href="" class="navigation__link link emphasis">Студия</a>
             </li>
-            <li class="header-item">
-              <a href="./portfolio.html " class="header-link link emphas"
+            <li class="navigation__item">
+              <a href="./portfolio.html " class="navigation__link link"
                 >Портфолио</a
               >
             </li>
-            <li class="header-item">
-              <a href="" class="header-link link">Контакты</a>
+            <li class="navigation__item">
+              <a href="" class="navigation__link link">Контакты</a>
             </li>
           </ul>
         </nav>
 
-        <ul class="header-list-contact list">
-          <li class="header-item-mail">
-            <a href="mailto:info@devstudio.com" class="header-link link">
-              <svg class="header-icon" width="16" height="12">
+        <ul class="contact__list">
+          <li class="contact__item-mail">
+            <a href="mailto:info@devstudio.com" class="contact__link link">
+              <svg class="contact__icon" width="16" height="12">
                 <use href="./img/icons.svg#icon-envelope"></use>
               </svg>
               info@devstudio.com
             </a>
           </li>
-          <li class="header-item-tel">
-            <a href="tel:+380961111111" class="header-tel header-link link">
-              <svg class="header-icon" width="10" height="16">
+          <li class="contact__item-tel">
+            <a href="tel:+380961111111" class="contact__tel contact__link link">
+              <svg class="contact__icon" width="10" height="16">
                 <use href="./img/icons.svg#icon-smartphone"></use>
               </svg>
               +38 096 111 11 11</a
             >
           </li>
         </ul>
+        <button type="button" class="menu__open__btn" data-menu-open>
+          <svg class="header__icon" width="24" height="16">
+            <use href="./img/icons.svg#icon-menu_24px"></use>
+          </svg>
+        </button>
       </div>
-    </header> -->
+      <div class="mob__menu is-hidden" data-menu>
+        <div class="container">
+          <div class="mob__menu__top">
+            <button type="button" class="menu__close__btn" data-menu-close>
+              <svg class="mob__icon" width="30" height="30">
+                <use href="./img/icons.svg#icon-krestic"></use>
+              </svg>
+            </button>
+            <nav class="mob__navigation">
+              <ul class="mob__navigation__list list">
+                <li class="mob__navigation__item">
+                  <a href="" class="mob__navigation__link link emphasis"
+                    >Студия</a
+                  >
+                </li>
+                <li class="mob__navigation__item">
+                  <a href="./portfolio.html " class="mob__navigation__link link"
+                    >Портфолио</a
+                  >
+                </li>
+                <li class="mob__navigation__item">
+                  <a href="" class="mob__navigation__link link">Контакты</a>
+                </li>
+              </ul>
+            </nav>
+          </div>
+          <ul class="mob__contact list">
+            <li class="mob__contact__item-tel">
+              <a
+                href="tel:+380961111111"
+                class="mob__contact__tel contact__link link"
+              >
+                +38 096 111 11 11</a
+              >
+            </li>
+            <li class="mob__contact__item-mail">
+              <a
+                href="mailto:info@devstudio.com"
+                class="mob__contact__link link"
+              >
+                info@devstudio.com
+              </a>
+            </li>
+          </ul>
+          <ul class="mob__soc__list">
+            <li class="mob__soc__item">
+              <a
+                href=""
+                class="mob__soc__link"
+                target="_blank"
+                rel="noopener noreferrer nofollow"
+                >Instagram</a
+              >
+            </li>
+            <li class="mob__soc__item">
+              <a
+                href=""
+                class="mob__soc__link"
+                target="_blank"
+                rel="noopener noreferrer nofollow"
+                >Twitter</a
+              >
+            </li>
+            <li class="mob__soc__item">
+              <a
+                href=""
+                class="mob__soc__link"
+                target="_blank"
+                rel="noopener noreferrer nofollow"
+                >Facebook</a
+              >
+            </li>
+            <li class="mob__soc__item">
+              <a
+                href=""
+                class="mob__soc__link"
+                target="_blank"
+                rel="noopener noreferrer nofollow"
+                >LinkedIn</a
+              >
+            </li>
+          </ul>
+        </div>
+      </div>
+    </header>
     <main>
-      
-      <!-- <section class="portfolio section">
+      <section class="portfolio section">
         <div class="container">
           <h2 class="visually-hidden">портфолио</h2>
 
@@ -88,9 +175,8 @@
             <li class="portfolio-item-btn">
               <button type="button" class="portfolio-btn">Маркетинг</button>
             </li>
-          </ul> -->
+          </ul>
 
-          
           <ul class="portfolio-list picture list">
             <li class="portfolio-item pictures">
               <a href="" class="portfolio-top-link">
@@ -319,7 +405,6 @@
         </div>
       </section>
     </main>
-<!--    
     <footer class="footer">
       <div class="container">
         <div class="footer-logo-address">
@@ -411,8 +496,9 @@
           </div>
         </form>
       </div>
-    </footer> -->
-    <!-- <div class="backdrop is-hidden" data-modal>
+    </footer>
+
+    <div class="backdrop is-hidden" data-modal>
       <div class="modal">
         <button type="button" class="modal-close" data-modal-close>
           <svg class="modal-icon" width="15" height="15">
@@ -495,6 +581,7 @@
         </form>
       </div>
     </div>
-    <script src="./js/modal.js"></script> -->
+    <script src="./js/modal.js"></script>
+    <script src="./js/menu.js"></script>
   </body>
 </html>

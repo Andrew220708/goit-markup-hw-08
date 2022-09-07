@@ -33,9 +33,12 @@
 }
 .pictures {
   width: 100%;
-  @include mobile {
+  @include tablet {
+    flex-basis: calc((100% - 30px) / 2);
   }
-  // flex-basis: calc(100% / 3 - 30px);
+  @include desktop {
+    flex-basis: calc((100% - 60px) / 3);
+  }
 }
 .portfolio-work {
   padding-top: 20px;
