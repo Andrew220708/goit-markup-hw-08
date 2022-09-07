@@ -1119,15 +1119,6 @@ margin-right: 8px;
   margin-bottom: 50px;
 }
 
-.portfolio-list {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-  gap: 30px;
-}
-
 .portfolio-title {
   font-weight: 700;
   font-size: 18px;
@@ -1221,6 +1212,15 @@ margin-right: 8px;
 .portfolio-top-link:hover, .portfolio-top-link:focus {
   -webkit-transform: translateY();
           transform: translateY();
+}
+
+.picture {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  gap: 30px;
 }
 
 .clients-list {
