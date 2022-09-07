@@ -181,6 +181,29 @@
             <li class="portfolio-item pictures">
               <a href="" class="portfolio-top-link">
                 <div class="portfolio-top-wrap">
+                  <picture>
+                    <source
+                      srcset="
+                        ./img/portfolio-img-1.jpg    1x,
+                        ./img/portfolio-img-1-2x.jpg 2x
+                      "
+                      media="(min-width:1200px}"
+                    />
+                    <source
+                      srcset="
+                        ./img/portfolio-img-1-tab-1x.jpg 1x,
+                        ./img/portfolio-img-1-tab-2x.jpg 2x
+                      "
+                      media="(min-width:768px}"
+                    />
+                    <source
+                      srcset="
+                        ./img/portfolio-img-1-mob-1x.jpg 1x,
+                        ./img/portfolio-img-1-mob-2x.jpg 2x
+                      "
+                      media="(max-width:767px}"
+                    />
+                  </picture>
                   <img
                     src="./img/portfolio-img-1.jpg"
                     alt="работники"
