@@ -272,6 +272,38 @@ body {
   text-decoration: none;
 }
 
+.emphasis::after {
+  content: "";
+  width: 48px;
+  height: 4px;
+  background-color: #2196f3;
+  display: block;
+  position: absolute;
+  top: 45px;
+  display: none;
+}
+@media screen and (min-width: 1200px) {
+  .emphasis::after {
+    display: block;
+  }
+}
+
+.emphas::after {
+  content: "";
+  width: 78px;
+  height: 4px;
+  background-color: #2196f3;
+  display: block;
+  position: absolute;
+  top: 45px;
+  display: none;
+}
+@media screen and (min-width: 1200px) {
+  .emphas::after {
+    display: block;
+  }
+}
+
 .mob__menu {
   position: fixed;
   background-color: #ffffff;
