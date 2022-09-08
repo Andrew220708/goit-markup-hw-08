@@ -524,6 +524,12 @@ button {
   }
 }
 
+@media screen and (min-width: 1200px) {
+  .features {
+    padding-bottom: 0;
+  }
+}
+
 .features__list {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -775,6 +781,17 @@ button {
   font-family: "Raleway";
 }
 
+@media screen and (min-width: 768px) {
+  .footer-logo-address {
+    margin-right: 80px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .footer-logo-address {
+    margin-right: 0px;
+  }
+}
+
 .join-footer-item {
   font-family: "Roboto";
   font-style: normal;
@@ -850,9 +867,29 @@ button {
   background-color: transparent;
   margin-bottom: 20px;
 }
+@media screen and (min-width: 480px) {
+  .subscrip-input {
+    width: 400px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+}
+@media screen and (min-width: 768px) {
+  .subscrip-input {
+    width: 400px;
+  }
+}
 @media screen and (min-width: 1200px) {
   .subscrip-input {
-    width: 358px;
+    width: 340px;
+    margin-left: 76px;
   }
 }
 
@@ -880,7 +917,7 @@ button {
   border-radius: 4px;
   min-width: 200px;
   height: 50px;
-  margin-left: 12px;
+  margin-left: 10px;
   font-weight: 700;
   font-size: 16px;
   line-height: 1.88;
@@ -892,6 +929,13 @@ button {
           transition-duration: 250ms;
   -webkit-transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
           transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  margin-left: auto;
+  margin-right: auto;
+}
+@media screen and (min-width: 1200px) {
+  .subscrip-btn-button {
+    margin-left: 10px;
+  }
 }
 
 .subscrip-btn-icon {
@@ -1138,6 +1182,10 @@ margin-right: 8px;
 }
 
 .portfol-btn {
+  padding-top: 6px;
+  padding-right: 20px;
+  padding-bottom: 6px;
+  padding-left: 20px;
   font-weight: 500;
   font-size: 16px;
   line-height: 1.62;
@@ -1332,8 +1380,6 @@ margin-right: 8px;
 .clients-link {
   border: 1px solid #afb1b8;
   border-radius: 4px;
-  width: 170px;
-  height: 92px;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
@@ -1346,6 +1392,24 @@ margin-right: 8px;
   fill: #afb1b8;
   -webkit-transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1);
   transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+@media screen and (min-width: 480px) {
+  .clients-link {
+    width: 210px;
+    height: 92px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .clients-link {
+    width: 226px;
+    height: 92px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .clients-link {
+    width: 170px;
+    height: 92px;
+  }
 }
 .clients-link:last-child {
   margin-right: 0;

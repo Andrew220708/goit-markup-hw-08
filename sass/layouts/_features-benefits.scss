@@ -17,6 +17,11 @@
     width: calc((100% - 90px) / 4);
   }
 }
+.features {
+  @include desktop {
+    padding-bottom: 0;
+  }
+}
 .features__list {
   display: flex;
   flex-wrap: wrap;
