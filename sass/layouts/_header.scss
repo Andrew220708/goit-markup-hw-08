@@ -146,6 +146,9 @@
     display: block;
   }
 }
+.mob__menu__top {
+  margin-bottom: auto;
+}
 .mob__menu {
   position: fixed;
   background-color: #ffffff;
@@ -154,7 +157,7 @@
   width: 100vw;
   height: 100vh;
   z-index: 1;
-  padding-top: 2px;
+  padding-top: 20px;
   padding-bottom: 48px;
   padding-right: 20px;
   padding-left: 25px;
@@ -162,7 +165,6 @@
     height: 100%;
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
   }
   @include tablet {
     display: none;
@@ -190,7 +192,7 @@
 .mob__contact__tel {
   font-weight: 500;
   font-size: 34px;
-  line-height: 1.18px;
+  line-height: 1.18;
   letter-spacing: 0.02em;
   color: #2196f3;
   text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);

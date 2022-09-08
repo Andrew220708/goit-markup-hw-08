@@ -30,6 +30,15 @@
 
 .buttons {
   display: flex;
-  justify-content: center;
   margin-bottom: 50px;
+
+  @include mobile {
+    flex-wrap: wrap;
+  }
+  @include tablet {
+    justify-content: center;
+  }
+  @include desktop {
+    justify-content: center;
+  }
 }
