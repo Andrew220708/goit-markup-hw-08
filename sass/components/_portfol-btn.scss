@@ -25,9 +25,11 @@
 }
 
 .portfol-item-btn:not(:last-child) {
-  margin-right: 8px;
+  // margin-right: 8px;
 }
-
+.portfol-list {
+  gap: 8;
+}
 .buttons {
   display: flex;
   margin-bottom: 50px;
