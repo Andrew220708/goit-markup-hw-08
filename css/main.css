@@ -742,9 +742,6 @@ button {
 .footer {
   padding-top: 60px;
   padding-bottom: 60px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
 }
 .footer-tel {
   font-family: "Roboto";
@@ -902,7 +899,7 @@ button {
 }
 @media screen and (min-width: 480px) {
   .subscrip-input {
-    width: 400px;
+    width: 100%;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
