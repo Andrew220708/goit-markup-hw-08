@@ -718,22 +718,24 @@ button {
 }
 
 .footer .container {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
   -webkit-box-align: baseline;
       -ms-flex-align: baseline;
           align-items: baseline;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
   text-align: center;
 }
-@media screen and (min-width: 480px) {
+@media screen and (min-width: 768px) {
   .footer .container {
-    gap: 60px;
-    -webkit-box-pack: cent;
-        -ms-flex-pack: cent;
-            justify-content: cent;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .footer .container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
   }
 }
 
@@ -794,8 +796,18 @@ button {
   }
 }
 
-.join-footer {
-  margin-right: auto;
+@media screen and (min-width: 480px) {
+  .join-footer-list {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+}
+
+@media screen and (min-width: 480px) {
+  .join-footer {
+    margin-top: 60px;
+  }
 }
 .join-footer-item {
   font-family: "Roboto";
@@ -806,6 +818,11 @@ button {
   letter-spacing: 0.03em;
   color: rgba(255, 255, 255, 0.6);
   display: inline-block;
+}
+@media screen and (min-width: 1200px) {
+  .join-footer-item {
+    margin-right: auto;
+  }
 }
 .join-footer-list {
   display: -webkit-box;
@@ -845,6 +862,17 @@ button {
   text-transform: uppercase;
   margin-bottom: 20px;
   color: #ffffff;
+}
+
+@media screen and (min-width: 480px) {
+  .subscrip-form {
+    margin-top: 60px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .subscrip-form {
+    margin-top: 60px;
+  }
 }
 
 .subscrip-title {
@@ -889,6 +917,15 @@ button {
 @media screen and (min-width: 768px) {
   .subscrip-input {
     width: 400px;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
   }
 }
 @media screen and (min-width: 1200px) {

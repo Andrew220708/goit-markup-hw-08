@@ -1,10 +1,13 @@
 .footer .container {
-  display: flex;
   align-items: baseline;
-  flex-wrap: wrap;
   text-align: center;
+
   @include tablet {
     justify-content: space-around;
+  }
+  @include desktop {
+    display: flex;
+    flex-wrap: wrap;
   }
 }
 
@@ -62,7 +65,15 @@
     margin-right: 70px;
   }
 }
+.join-footer-list {
+  @include mobile {
+    justify-content: center;
+  }
+}
 .join-footer {
+  @include mobile {
+    margin-top: 60px;
+  }
   &-item {
     font-family: "Roboto";
     font-style: normal;
@@ -72,6 +83,7 @@
     letter-spacing: 0.03em;
     color: rgba(255, 255, 255, 0.6);
     display: inline-block;
+
     @include desktop {
       margin-right: auto;
     }
@@ -108,7 +120,13 @@
   }
 }
 .subscrip-form {
-  // margin-left: 93px;
+  @include mobile {
+    margin-top: 60px;
+  }
+
+  @include tablet {
+    margin-top: 60px;
+  }
 }
 
 .subscrip-title {
@@ -141,6 +159,9 @@
   }
   @include tablet {
     width: 400px;
+    justify-content: center;
+    display: flex;
+    align-items: center;
   }
   @include desktop {
     width: 340px;
