@@ -4,7 +4,6 @@
 
   @include tablet {
     justify-content: space-around;
-    display: flex;
   }
   @include desktop {
     display: flex;
@@ -15,7 +14,7 @@
 .footer {
   padding-top: 60px;
   padding-bottom: 60px;
-
+  // display: flex;
   &-tel {
     font-family: "Roboto";
     font-style: normal;
@@ -153,7 +152,7 @@
   background-color: transparent;
   margin-bottom: 20px;
   @include mobile {
-    width: 400px;
+    width: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
