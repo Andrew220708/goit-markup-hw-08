@@ -727,6 +727,11 @@ button {
   .footer .container {
     -ms-flex-pack: distribute;
         justify-content: space-around;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
   }
 }
 @media screen and (min-width: 1200px) {
@@ -804,6 +809,16 @@ button {
 @media screen and (min-width: 480px) {
   .join-footer {
     margin-top: 60px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .join-footer {
+    margin-top: 0px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .join-footer {
+    margin-top: 0px;
   }
 }
 .join-footer-item {
@@ -1254,7 +1269,7 @@ margin-right: 8px;
 }
 
 .portfol-list {
-  gap: 8;
+  gap: 8px;
 }
 
 .buttons {

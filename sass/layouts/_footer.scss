@@ -4,6 +4,8 @@
 
   @include tablet {
     justify-content: space-around;
+    display: flex;
+    flex-wrap: wrap;
   }
   @include desktop {
     display: flex;
@@ -73,6 +75,12 @@
 .join-footer {
   @include mobile {
     margin-top: 60px;
+  }
+  @include tablet {
+    margin-top: 0px;
+  }
+  @include desktop {
+    margin-top: 0px;
   }
   &-item {
     font-family: "Roboto";
